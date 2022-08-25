@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"> <!-- localhost 3000-->
+    <title>Drinks App</title>
+</head>
+<body>
+  <h1>Welcome to gitPub</h1>
+  <style>
+  body {
+    color: blanchedalmond;
+    background-color: steelblue;
+  }
+</style> 
+<h1>Drinks</h1>
+    <ol>
+        
+    <% drinks.forEach((f) => { %>
+        <li>
+            <a href="/drinks/<%= f.id %>">
+            <%= f.name %> c
+        </a>
+        </li>
+   <% }); %>
+    </ol>
+    <h1>Food</h1>
+    <ol>
+      <% food.forEach((f) => { %>
+          <li>
+              <a href="/drinks/<%= f.id %>">
+              <%= f.name %> c
+          </a>
+          </li>
+     <% }); %>
+      </ol>
+</body>
+</html>
